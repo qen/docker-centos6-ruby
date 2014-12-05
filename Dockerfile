@@ -1,4 +1,3 @@
-
 FROM centos:centos6
 MAINTAINER Qen Empaces <qen.empaces@gmail.com>
 
