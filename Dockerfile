@@ -12,8 +12,8 @@ RUN rm -rf /epel-release*
 
 RUN wget -O ruby-install-0.5.0.tar.gz https://github.com/postmodern/ruby-install/archive/v0.5.0.tar.gz
 RUN tar -xzvf ruby-install-0.5.0.tar.gz
-RUN cd ruby-install-0.5.0/
-RUN make install && cd / && rm -Rf ruby-install-0.5.*
+RUN cd ruby-install-0.5.0 && make install 
+RUN cd / && rm -Rf ruby-install-0.5.*
 RUN ruby-install --system ruby -- --disable-install-rdoc
 RUN gem install bundler --no-rdoc --no-ri
 
